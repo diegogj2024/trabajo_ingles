@@ -41,14 +41,14 @@
             display: flex;
             align-items: center;
             overflow: hidden;
-            transform: rotateY(180deg); /* Ocultar la parte de la espalda inicialmente */
+            transform: rotateY(180deg);
             color: white;
             padding: 15px;
             font-size: 14px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #333; /* Fondo para la parte posterior */
+            background-color: #333;
         }
         
         .back::before {
@@ -60,9 +60,8 @@
             animation: rotation_481 5000ms infinite linear;
         }
 
-        /* Mostrar el contenido de la tarjeta al pasar el mouse */
         .card:hover .content {
-            transform: rotateY(180deg); /* Al pasar el mouse, rota la tarjeta */
+            transform: rotateY(180deg);
         }
 
         @keyframes rotation_481 {
@@ -87,7 +86,6 @@
             object-position: center;
         }
 
-        /* Estilo adicional */
         .title {
             font-size: 14px;
             text-align: center;
