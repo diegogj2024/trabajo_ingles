@@ -70,9 +70,31 @@ body {
 
 #texto {
     position: relative;
-    width: 700px;
+    left: 350px;
+    width: 800px;
     z-index: 2;
-    color: rgb(230, 223, 223);
-    font-size: 18px; 
-    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    padding: 20px 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#texto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+#texto::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c7b183;
+    margin: 0 auto 15px auto;
+    border-radius: 2px;
 }
