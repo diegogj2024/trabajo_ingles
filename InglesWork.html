@@ -5,101 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Impact</title>
     <link rel="stylesheet" href="InglesWork.css">
-    <style>
-        .card {
-            overflow: visible;
-            width: 190px;
-            height: 254px;
-            perspective: 1000px;
-        }
-        
-        .content {
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: transform 300ms;
-            box-shadow: 0px 0px 10px 1px #000000ee;
-            border-radius: 5px;
-        }
-        
-        .front, .back {
-            background-color: #151515;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            border-radius: 5px;
-            overflow: hidden;
-            top: 50px;
-        }
-        
-        .back {
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            transform: rotateY(180deg);
-            color: white;
-            padding: 15px;
-            font-size: 14px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #333;
-        }
-        
-        .back::before {
-            position: absolute;
-            content: ' ';
-            display: block;
-            width: 160px;
-            height: 160%;
-            animation: rotation_481 5000ms infinite linear;
-        }
-
-        .card:hover .content {
-            transform: rotateY(180deg);
-        }
-
-        @keyframes rotation_481 {
-            0% {
-                transform: rotateZ(0deg);
-            }
-
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
-
-        .front {
-            color: white;
-        }
-
-        .front .img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .title {
-            font-size: 14px;
-            text-align: center;
-            color: white;
-        }
-
-        .description {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        }
-    </style>
 </head>
 <body>
     <div id="video">
@@ -112,38 +17,48 @@
             <button>Regiones</button>
             <button>Historia</button>
         </div>
+    </div>
         <div class="logo-container">
             <img src="logo.png" alt="Genshin Impact Logo">
         </div>
-
         <div class="card">
-            <div class="content">
-                <div class="front">
-                    <img class="img" src="https://i.blogs.es/56801d/genshin-impact-inazuma-2000x1270/1366_2000.jpeg" alt="Inazuma">
+            <div class="contenedor">
+                <div class="frente">
+                    <img src="https://i.blogs.es/56801d/genshin-impact-inazuma-2000x1270/1366_2000.jpeg">
                 </div>
-                <div class="back">
-                    <div class="title">
+                <div class="atras">
+                    <div class="titulo">
                         <h3>Inazuma</h3>
                     </div>
-                    <div class="description">
-                        <p>This is the nation of Inazuma.<br> Ruled by the Archon and God, Shogun Raiden. The Electro Archon's real name is Raiden Ei.</p>
+                    <div>
+                        <p>This is the nation of Inazuma. Ruled by the Archon and God, Shogun Raiden. Whose name is from a puppet created by the Electro Archon based on herself to be in command of the Nation. The Electro Archon's real name is Raiden Ei.</p>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="card">
-            <div class="content">
-                <div class="front">
-                    <img class="img" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/mondstadt_city.jpg" alt="Liyue">
+            <div class="contenedor">
+                <div class="frente">
+                    <img src="https://i.pinimg.com/originals/cf/f5/77/cff577ea2158a804c3f39afb1d20a608.png">
                 </div>
-                <div class="back">
-                    <div class="title">
+                <div class="atras">
+                    <div class="titulo">
                         <h3>Liyue</h3>
                     </div>
-                    <div class="description">
-                        <p>This is the Liyue Nation.<br> Ruled by the Geo Archon, Zhongli. Currently retired, he is considered the strongest Archon of all.</p>
+                    <div>
+                        <p>This is the Liyue Nation.
+                            It was ruled by the Geo Archon, Zhongli. 
+                            Currently he retired from the God position to live a quiet and peaceful life as a mortal. 
+                            Considered the strongest Archon/God of all.
+                        </p>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contenedor">
+                <div class="frente">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/04/mondstadt_city.jpg">
                 </div>
             </div>
         </div>
