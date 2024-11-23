@@ -1,12 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #f5f5f5;
     min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x:hidden;
 }
 
 .nav-container {
@@ -68,33 +64,160 @@ body {
     width: 100%;
 }
 
-#texto {
+
+#acomodardivf{
+    position: relative;left:1200px;
+    bottom: 2500px;
+}
+
+#botones_personajes {
+    position: fixed; 
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width:300px;
+    height: 500px;
+}
+
+#botones_personajes img {
+    max-width: 200px;
+    height: auto;
+}
+#posicion{
+    max-width: 200px;
+    height: auto;
+    position: relative;right: 100px;
+    top: 80px;
+}
+
+#a{
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;bottom: 200px;
+}
+
+#a1{
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;bottom: 100px;
+    right: 10px;
+}
+
+#a2{
+    cursor: pointer;
+    border-radius: 50%;
     position: relative;
-    left: 350px;
-    width: 800px;
-    z-index: 2;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: rgb(20, 20, 20);
-    font-size: 18px;
-    padding: 20px 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    right: 300px;
+    bottom: 20px;
+}
+
+.imgpersonajes{
+    position: relative; 
+    z-index: 1; 
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    width: 600px;
+}
+
+.imgpersonajes1{
+    position: relative; 
+    z-index: 2; 
+    position: relative;
+    left: 500px;
+    bottom: 850px;
+    width: 600px;
+}
+
+.imgpersonajes2{
+    position: relative; 
+    z-index: 3; 
+    position: relative;
+    left: 500px;
+    bottom: 1600px;
+    width: 600px;
+}
+
+#tamañoimg{
+    width: 600px;
+    height: 400px;
+    position: relative;bottom: 200px;
+}
+
+#tamañoimg1{
+    width: 600px;
+    height: 400px;
+    position: relative;bottom: 250px;
+}
+
+#tamañoimg2{
+    width: 600px;
+    height: 500px;
+    position: relative;left: 100px;
+    bottom: 200px;
+}
+
+.mostrar{
+    position: relative;right: 1000px;
+}
+
+.mostrar1{
+    position: relative;right: 1000px;
+}
+
+.mostrar2{
+    position: relative;right: 1000px;
 }
 
 
-#texto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.35);
+#div1{
+    position: relative;right: 200px;
+    width: 600px;
 }
 
-#texto::before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #c7b183;
-    margin: 0 auto 15px auto;
-    border-radius: 2px;
+#acomodarimg{
+    width: 200px;
+    position: relative;right: 200px;
+    top: 100px;
+}
+
+
+#acomodartexto{
+    position: relative;right: 200px;
+    top: 150px;
+    color: white;
+}
+
+#acomodarvid{
+    position: relative;top: 200px;
+    right: 100px;
+}
+
+#titulo{
+    color: white;
+    font-family: 'Cinzel', serif;
+    position: relative; right: 200px;
+    top: 50px;
+    font-size: 30px;
+    animation: colores infinite linear 10s;
+}
+
+@keyframes colores{
+    0%{
+        color: blue;
+    }
+
+    25%{
+        color: rgb(10, 163, 10);
+    }
+
+    50%{
+        color: red;
+    }
+    
+    100%{
+        color: rgb(166, 8, 166);
+    }
 }
