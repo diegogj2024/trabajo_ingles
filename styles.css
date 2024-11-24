@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 150px;
-    z-index: 1;
+    z-index: 6;
 }
 
 .nav-buttons {
