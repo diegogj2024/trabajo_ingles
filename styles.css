@@ -98,6 +98,10 @@ body {
     position: relative;bottom: 200px;
 }
 
+#a:hover{
+    transform: scale(1.3);
+}
+
 #a1{
     cursor: pointer;
     border-radius: 50%;
@@ -105,12 +109,21 @@ body {
     right: 10px;
 }
 
+#a1:hover{
+    transform: scale(1.3);
+}
+
 #a2{
     cursor: pointer;
     border-radius: 50%;
     position: relative;
+<<<<<<< HEAD
     right: 300px;
     bottom: 20px;
+}
+
+#a2:hover{
+    transform: scale(1.3);
 }
 
 .imgpersonajes{
@@ -220,4 +233,11 @@ body {
     100%{
         color: rgb(166, 8, 166);
     }
+=======
+    width: 700px;
+    z-index: 2;
+    color: rgb(230, 223, 223);
+    font-size: 18px; 
+    padding: 20px;
+>>>>>>> parent of c953b1f (.)
 }
